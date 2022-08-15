@@ -1,3 +1,5 @@
+# If you've ever wanted to send a secret message to someone, now's your chance. 
+
 text = input("Enter your message: ")
 cip= int(input("Press 1 for cipher and 0 for decipher "))
 shift = int(input("Enter value of shift (1 - 25): "))
@@ -19,7 +21,8 @@ for char in text:
         char = char.upper()
         code = ord(char) + shift
         if code > ord('Z'):
-            code = (ord('A')+ code - ord('Z') - 1)
+            code = (ord('A')
++ code - ord('Z') - 1)
         if lowletter == True:
             cipher += chr(code).lower()
         else: cipher+=chr(code)

@@ -1,4 +1,4 @@
-#Funckja wyswietla numery podane przez uzytkownika
+# Function displays the number passed in by user.
 def lendisplay(numer):
     
     lin1=""

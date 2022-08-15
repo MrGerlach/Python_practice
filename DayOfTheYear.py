@@ -1,5 +1,5 @@
 def isYearLeap(year):
-    #Rok przestępny: f-cja zwraca 1. W pzeciwnym wypadku 0
+    #Function returns 1 if the year is the YearLeap
     if year%100==0:
         if year%400==0:
             return True
@@ -9,7 +9,7 @@ def isYearLeap(year):
     else: return False 
 
 def daysInMonth(year, month):
-    #Funkcja pokazuje ile jest dni w danym miesiącu roku
+    #Fucion show how many days are in the month
     monthLeap=[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     monthNLeap=[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if isYearLeap(year)== True:
@@ -18,7 +18,7 @@ def daysInMonth(year, month):
         return monthNLeap[int(month)-1]
 
 def dayOfYear(year, month, day):
-#F-cja zwraca, który to dzień w roku
+#function shows which day of the year it is
     if not day <= daysInMonth(year, month):
         return None
     monthLeap=[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
